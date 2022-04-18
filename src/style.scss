@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Colors ---*/
+// Primary
+$Strong-cyan: hsl(172, 67%, 45%);
+
+// Neutral
+$Very-dark-cyan: hsl(183, 100%, 15%);
+$Dark-grayish-cyan: hsl(186, 14%, 43%);
+$Grayish-cyan: hsl(184, 14%, 56%);
+$Light-grayish-cyan: hsl(185, 41%, 84%);
+$Very-light-grayish-cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  background: $Light-grayish-cyan;
+  // width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  header {
+    margin-bottom: 4rem;
+    
+  }
+
+  main {
+    background: $White;
+    width: 47rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    padding: 1.7rem;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    
+    section {
+      border: solid 1px;
+    }
+
+    aside {
+      background: $Very-dark-cyan;
+      border-radius: 0.8rem;
+    }
+  }
+}

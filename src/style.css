@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* --- Colors ---*/
+body {
+  background: #c5e4e7;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header {
+  margin-bottom: 4rem;
+}
+
+body main {
+  background: white;
+  width: 47rem;
+  height: 25rem;
+  border-radius: 1.5rem;
+  padding: 1.7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+body main section {
+  border: solid 1px;
+}
+
+body main aside {
+  background: #00494d;
+  border-radius: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */
