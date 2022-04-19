@@ -32,28 +32,46 @@
       <section>
         <div class="bill">
           <p>Bill</p>
-          <input type="number" step="0.01" placeholder="0.00" />
+          <input
+            class="input-bill"
+            type="number"
+            step="0.01"
+            placeholder="0.00"
+          />
         </div>
 
         <div class="select-tip">
           <p>Select Tip %</p>
-          <a href="#">5%</a>
-          <a href="#">10%</a>
-          <a href="#">15%</a>
-          <a href="#">25%</a>
-          <a href="#">50%</a>
-          <input
-            class="outher-tip"
-            type="number"
-            step="0.01"
-            placeholder="Custom"
-          />
+          <ul class="list-tip">
+            <li><a href="#">5%</a></li>
+            <li><a href="#">10%</a></li>
+            <li><a href="#">15%</a></li>
+            <li><a href="#">25%</a></li>
+            <li><a href="#">50%</a></li>
+            <li>
+              <a href="#"
+                ><input
+                  class="outher-tip"
+                  type="number"
+                  step="0.01"
+                  placeholder="Custom"
+              /></a>
+            </li>
+          </ul>
         </div>
 
         <div class="number-people">
-          <p>Number of People</p>
-          <p class="number-people-error">Can't be zero</p>
-          <input type="number" step="0" placeholder="0" />
+          <div class="title-alert">
+            <p>Number of People</p>
+            <span class="number-people-error">Can't be zero</span>
+          </div>
+
+          <input
+            class="input-number-people"
+            type="number"
+            step="0"
+            placeholder="0"
+          />
         </div>
       </section>
       <aside>Tip Amount / person Total / person Reset</aside>

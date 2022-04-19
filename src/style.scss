@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* --- Colors ---*/
@@ -15,6 +16,13 @@ $Grayish-cyan: hsl(184, 14%, 56%);
 $Light-grayish-cyan: hsl(185, 41%, 84%);
 $Very-light-grayish-cyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
+$Red_alert: hsl(14, 87%, 48%);
+
+/* --- Mixin ---*/
+@mixin toggle-visibility($visibility, $opacity) {
+  visibility: $visibility;
+  opacity: $opacity;
+}
 
 body {
   background: $Light-grayish-cyan;
@@ -32,17 +40,85 @@ body {
 
   main {
     background: $White;
-    width: 47rem;
+    max-width: 47rem;
     height: 25rem;
     border-radius: 1.5rem;
     padding: 1.7rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
 
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     
     section {
-      border: solid 1px;
+      padding: 0.5rem;
+      //border: solid 1px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p {
+        font-size: 0.8rem;
+        color: $Dark-grayish-cyan;
+        margin-bottom: 0.3rem;
+      }
+
+      input {
+        width: 100%;
+        height: 2.5rem;
+        text-align: right;
+        
+      }
+
+      .select-tip {
+        
+        
+        .list-tip {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 1rem;
+          
+          
+          li {
+            height: 3rem;
+            background: $Very-dark-cyan;
+            border-radius: .3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+            
+            a {
+              color: $White;
+              font-size: 1rem;
+            }
+          }
+        }
+
+      }
+
+      .number-people {
+        .title-alert {
+          display: flex;
+          justify-content: space-between;
+
+          .number-people-error {
+            font-size: 0.8rem;
+            color: $Red_alert;
+            @include toggle-visibility(hidden, 0);
+          }
+
+          .number-people-error.show {
+            @include toggle-visibility(visible, 1);
+          }
+        }
+
+        input {
+          margin-bottom: 0;
+        }
+      }
+      
     }
 
     aside {
