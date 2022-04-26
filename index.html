@@ -38,6 +38,7 @@
             step="0.01"
             placeholder="0.00"
           />
+          <i><img src="./assets/icon-dollar.svg" alt="$" /></i>
         </div>
 
         <div class="select-tip">
@@ -72,9 +73,31 @@
             step="0"
             placeholder="0"
           />
+          <i><img src="./assets/icon-person.svg" alt="person icon" /></i>
         </div>
       </section>
-      <aside>Tip Amount / person Total / person Reset</aside>
+
+      <aside>
+        <div class="info-values">
+          <div class="tip-amount row">
+            <div class="description">
+              <p><span>Tip Amount</span> / person</p>
+            </div>
+            <div class="tip-amount value">
+              <p>$0.00</p>
+            </div>
+          </div>
+          <div class="total row">
+            <div class="description">
+              <p><span>Total</span> / person</p>
+            </div>
+            <div class="total value">
+              <p>$0.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="button">RESET</button>
+      </aside>
     </main>
   </body>
 </html>
