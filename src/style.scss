@@ -93,8 +93,7 @@ body {
       }
 
       .select-tip {
-        
-        
+  
         .list-tip {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -226,4 +225,34 @@ body {
       }
     }
   }
+
+  @media (max-width: 600px){
+
+    header {
+      margin-top: 3rem;
+      //height: 10rem;
+    }
+    main {
+      display: block;
+      height: 45rem;
+
+      section {
+        height: 25rem;
+        .select-tip {
+          .list-tip {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+          }
+        }
+      }
+
+      aside {
+        .row{
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    
+  }
+  
 }

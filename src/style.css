@@ -243,4 +243,26 @@ body main aside .button.active {
 body main aside .button.active:hover {
   background: #c5e4e7;
 }
+
+@media (max-width: 600px) {
+  body header {
+    margin-top: 3rem;
+  }
+  body main {
+    display: block;
+    height: 45rem;
+  }
+  body main section {
+    height: 25rem;
+  }
+  body main section .select-tip .list-tip {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  body main aside .row {
+    margin-bottom: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
