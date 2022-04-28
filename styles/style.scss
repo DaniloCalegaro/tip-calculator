@@ -124,7 +124,7 @@ body {
               color: $Very-dark-cyan;
             }
 
-            button:focus {
+            button.selected {
               background: $Strong-cyan;
               color: $Very-dark-cyan;
             }

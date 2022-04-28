@@ -131,7 +131,7 @@ body main section .select-tip .list-tip li button:hover {
   color: #00494d;
 }
 
-body main section .select-tip .list-tip li button:focus {
+body main section .select-tip .list-tip li button.selected {
   background: #26c0ab;
   color: #00494d;
 }
