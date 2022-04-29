@@ -33,6 +33,7 @@
         <div class="bill">
           <p>Bill</p>
           <input
+            id="input-bill"
             class="input-bill"
             type="number"
             step="0.01"
@@ -69,6 +70,7 @@
           </div>
 
           <input
+            id="input-number-people"
             class="input-number-people"
             type="number"
             step="0"
@@ -85,7 +87,7 @@
               <p><span>Tip Amount</span> / person</p>
             </div>
             <div class="tip-amount value">
-              <p>$0.00</p>
+              <p>$<span id="tip-amount">0.00</span></p>
             </div>
           </div>
           <div class="total row">
@@ -93,11 +95,11 @@
               <p><span>Total</span> / person</p>
             </div>
             <div class="total value">
-              <p>$0.00</p>
+              <p>$<span id="total-bill">0.00</span></p>
             </div>
           </div>
         </div>
-        <button class="button">RESET</button>
+        <button id="button-reset" class="button">RESET</button>
       </aside>
     </main>
 
