@@ -68,7 +68,7 @@ function modifyLabelsTipAmountAndTotal(tipAmount, total) {
 
 //---- Events ---//
 
-inputBill.addEventListener('input', e => {
+inputBill.addEventListener('input', function () {
   //console.log(inputBill.value)
   if (!checkNumberOfPeopleZero()) {
     calculatePerson(
@@ -113,7 +113,7 @@ inputOutherTip.addEventListener('input', e => {
   activateReset(true)
 })
 
-inputNumberPeople.addEventListener('input', e => {
+inputNumberPeople.addEventListener('input', function () {
   checkNumberOfPeopleZero()
 
   if (!checkNumberOfPeopleZero()) {
@@ -127,7 +127,7 @@ inputNumberPeople.addEventListener('input', e => {
   activateReset(true)
 })
 
-buttonReset.addEventListener('click', e => {
+buttonReset.addEventListener('click', function () {
   activateReset(false)
   inputBill.value = null
   inputOutherTip.value = null
