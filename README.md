@@ -32,7 +32,7 @@ Nesta foi fixado vários conhecimentos:
 
 ### Links
 
-- URL Preview da Solução : [Calculadora de Gorgeta - Splitter](https://danilocalegaro.github.io/tip-calculator/)
+- URL da Solução : [Calculadora de Gorgeta - Splitter](https://danilo-tip-calculator.vercel.app/)
 
 ## Meu Processo
 
