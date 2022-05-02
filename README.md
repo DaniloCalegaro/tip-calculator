@@ -32,7 +32,7 @@ Nesta foi fixado vários conhecimentos:
 
 ### Links
 
-- URL Solução : [Calculadora de Gorgeta - Splitter](https://danilocalegaro.github.io/tip-calculator/)
+- URL Preview da Solução : [Calculadora de Gorgeta - Splitter](https://danilocalegaro.github.io/tip-calculator/)
 
 ## Meu Processo
 
@@ -54,5 +54,5 @@ Linkedin - [Danilo Calegaro](https://www.linkedin.com/in/danilo-calegaro/)
 
 ## Pré-requisitos
 
-Para visualizar a pagina basta executar no navegador o arquivo index.html.
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Para visualizar a página basta abrir o projeto com o [VSCode](https://code.visualstudio.com/) e executar com a extensão LiveServer. Assim será possível ter acesso a todas as funções da aplicação.
+
