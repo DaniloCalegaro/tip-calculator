@@ -1,6 +1,10 @@
 # Calculadora de Gorgeta - Splitter
 
-Página criada para praticar os estudos, principalmente o Javascript
+Página criada para praticar os estudos, principalmente o Javascript.
+
+Nesta aplicação é possível inserir o valor total da conta, selecionar a porcentagem de serviço de garçom ou inserir uma porcentagem específica e a quantidade de pessoas que será dividida a conta.
+
+Assim é mostrado no visor lateral o valor de serviço de garçom para cada pessoa e também a conta total já somada a com o serviço de garçom para cada pessoa.
 
 # Tabela de conteúdos
 
